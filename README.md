@@ -1,36 +1,27 @@
-# Personal Journal / Diary (React + styled-components, AES-GCM)
+# Book Reading List (React + styled-components)
 
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
+![alt text](image.png)
 
-**Live Demo:** https://a2rp.github.io/journal/
+**Live Demo:** https://a2rp.github.io/book-reading-list/
 
-A lightweight, frontend-only journal with **password protection**. Entries are **AES-GCM encrypted** in your browser using a key derived from your password (PBKDF2). Transparent UI that blends with a black/dark theme.
+A lightweight, frontend-only app to track books you **want to read**, are **reading**, and have **read**. Dark-theme friendly (no background overrides) and fully **LocalStorage** powered.
 
 ## Features
 
--   Create, edit, delete **daily entries**
--   **Password lock/unlock** (no recovery)
--   **Client-side encryption** (AES-GCM, PBKDF2)
--   Change password (re-encrypts all entries locally)
--   Clear **ALL** entries (with confirm)
--   LocalStorage persistence
--   Custom confirm modal (no portals)
--   Dark/black theme friendly (no background overrides)
-
-## Security (quick notes)
-
--   Your password is **never stored**; the derived key lives only in memory when unlocked.
--   Data at rest is encrypted in LocalStorage; clearing the browser/storage will remove it.
--   There is **no password recovery**. Keep your password safe.
+-   Add books with **title**, author, status (To Read / Reading / Read)
+-   **Quick status actions** (📖 Reading / ✅ Read)
+-   Edit details: **pages, progress, dates, notes**
+-   **Search** by title/author, **filter** by status, **sort** (Newest, Title, Author, Status)
+-   **Clear all "Read"** books (confirm modal)
+-   Custom **confirm/success modals**
+-   Data persists in **LocalStorage** (refresh-safe)
 
 ## Local Install
 
 ```bash
 # 1) Clone the repo
-git clone https://github.com/a2rp/journal.git
-cd journal
+git clone https://github.com/a2rp/book-reading-list.git
+cd book-reading-list
 
 # 2) Install dependencies
 npm i
