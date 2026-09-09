@@ -79,18 +79,18 @@ Error generating stack: `+o.message+`
             text-decoration: underline;
         }
     }
-`,ge={Wrapper:Vh,Heading:Qh,Row:Yh,Col1:Kh,Col2:Gh};function Xh(){return w.jsx(w.Fragment,{children:w.jsxs(ge.Wrapper,{children:[w.jsx(ge.Heading,{children:"About Developer"}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"Name"}),w.jsx(ge.Col2,{children:"Ashish Ranjan"})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"Phone"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"tel:+918123747965",children:"+91 8123747965"})})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"Email"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"mailto:ash.ranjan09@gmail.com",children:"ash.ranjan09@gmail.com"})})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"Nationality"}),w.jsx(ge.Col2,{children:"The Republic of India"})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"Website"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"https://www.ashishranjan.net/",target:"_blank",rel:"noopener noreferrer",children:"https://www.ashishranjan.net/"})})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"Old Website"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"http://www.ashishranjan.in/",target:"_blank",rel:"noopener noreferrer",children:"http://www.ashishranjan.in/"})})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"Facebook"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"https://www.facebook.com/theash.ashish/",target:"_blank",rel:"noopener noreferrer",children:"https://www.facebook.com/theash.ashish/"})})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"LinkedIn"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"https://www.linkedin.com/in/aashishranjan/",target:"_blank",rel:"noopener noreferrer",children:"https://www.linkedin.com/in/aashishranjan/"})})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"YouTube"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"https://www.youtube.com/channel/UCLHIBQeFQIxmRveVAjLvlbQ",target:"_blank",rel:"noopener noreferrer",children:"https://www.youtube.com/channel/UCLHIBQeFQIxmRveVAjLvlbQ"})})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"GitHub"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"https://github.com/a2rp",target:"_blank",rel:"noopener noreferrer",children:"https://github.com/a2rp"})})]})]})})}const Ot="1px solid hsl(0 0% 100% / 0.14)",zu="1px solid hsl(0 0% 100% / 0.10)",nr="0 0 0 3px hsl(0 0% 100% / 0.15)",A={Page:re.div`
+`,ge={Wrapper:Vh,Heading:Qh,Row:Yh,Col1:Kh,Col2:Gh};function Xh(){return w.jsx(w.Fragment,{children:w.jsxs(ge.Wrapper,{children:[w.jsx(ge.Heading,{children:"About Developer"}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"Name"}),w.jsx(ge.Col2,{children:"Ashish Ranjan"})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"Phone"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"tel:+918123747965",children:"+91 8123747965"})})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"Email"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"mailto:ash.ranjan09@gmail.com",children:"ash.ranjan09@gmail.com"})})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"Nationality"}),w.jsx(ge.Col2,{children:"The Republic of India"})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"Website"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"https://www.ashishranjan.net/",target:"_blank",rel:"noopener noreferrer",children:"https://www.ashishranjan.net/"})})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"Old Website"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"http://www.ashishranjan.in/",target:"_blank",rel:"noopener noreferrer",children:"http://www.ashishranjan.in/"})})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"Facebook"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"https://www.facebook.com/theash.ashish/",target:"_blank",rel:"noopener noreferrer",children:"https://www.facebook.com/theash.ashish/"})})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"LinkedIn"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"https://www.linkedin.com/in/aashishranjan/",target:"_blank",rel:"noopener noreferrer",children:"https://www.linkedin.com/in/aashishranjan/"})})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"YouTube"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"https://www.youtube.com/channel/UCLHIBQeFQIxmRveVAjLvlbQ",target:"_blank",rel:"noopener noreferrer",children:"https://www.youtube.com/channel/UCLHIBQeFQIxmRveVAjLvlbQ"})})]}),w.jsxs(ge.Row,{children:[w.jsx(ge.Col1,{children:"GitHub"}),w.jsx(ge.Col2,{children:w.jsx("a",{href:"https://github.com/a2rp",target:"_blank",rel:"noopener noreferrer",children:"https://github.com/a2rp"})})]})]})})}const Ot="1px solid #2a303b",zu="1px solid #343b48",nr="0 0 0 3px rgba(148,163,184,.22)",A={Page:re.div`
         min-height: 100dvh;
     `,Container:re.div`
-        max-width: 980px;
+        max-width: 1120px;
         margin: 0 auto;
-        padding: 32px 18px 56px;
+        padding: 48px 22px 72px;
     `,Header:re.header`
         display: flex;
         justify-content: space-between;
         gap: 16px;
         align-items: end;
-        margin: 12px 0 18px;
+        margin: 12px 0 24px;
     `,Title:re.h1`
         font-size: clamp(28px, 3.5vw, 40px);
         line-height: 1.1;
@@ -117,7 +117,7 @@ Error generating stack: `+o.message+`
         border-radius: 16px;
         padding: 16px;
         border: ${Ot};
-        background: transparent;
+        background: #121620;
     `,FormRow:re.div`
         display: grid;
         grid-template-columns: 1fr 240px 160px auto;
@@ -129,7 +129,7 @@ Error generating stack: `+o.message+`
             grid-template-columns: 1fr;
         }
     `,Input:re.input`
-        background: transparent;
+        background: #121620;
         color: inherit;
         border: ${Ot};
         border-radius: 10px;
@@ -165,7 +165,7 @@ Error generating stack: `+o.message+`
             cursor: pointer;
         }
     `,TextArea:re.textarea`
-        background: transparent;
+        background: #121620;
         color: inherit;
         border: ${Ot};
         border-radius: 12px;
@@ -187,7 +187,7 @@ Error generating stack: `+o.message+`
         opacity: 0.75;
     `,PrimaryButton:re.button`
         border: ${Ot};
-        background: transparent;
+        background: #121620;
         color: inherit;
         padding: 10px 14px;
         border-radius: 10px;
