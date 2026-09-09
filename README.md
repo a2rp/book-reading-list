@@ -1,31 +1,41 @@
-# Book Reading List (React + styled-components)
+# Book Reading List
 
-![alt text](image.png)
+A focused React and Vite reading tracker for books you want to read, are reading, or have finished. Data stays in the browser with LocalStorage.
 
-**Live Demo:** https://a2rp.github.io/book-reading-list/
-
-A lightweight, frontend-only app to track books you **want to read**, are **reading**, and have **read**. Dark-theme friendly (no background overrides) and fully **LocalStorage** powered.
+![Book Reading List preview](image.png)
 
 ## Features
 
--   Add books with **title**, author, status (To Read / Reading / Read)
--   **Quick status actions** (📖 Reading / ✅ Read)
--   Edit details: **pages, progress, dates, notes**
--   **Search** by title/author, **filter** by status, **sort** (Newest, Title, Author, Status)
--   **Clear all "Read"** books (confirm modal)
--   Custom **confirm/success modals**
--   Data persists in **LocalStorage** (refresh-safe)
+- Add books with title, author, and reading status
+- Search, filter, and sort your list
+- Track pages, progress, notes, and dates
+- Quick status actions and edit flow
+- Confirmation dialogs for destructive actions
+- Responsive dark interface with local persistence
 
-## Local Install
+## Run locally
 
 ```bash
-# 1) Clone the repo
-git clone https://github.com/a2rp/book-reading-list.git
-cd book-reading-list
-
-# 2) Install dependencies
-npm i
-
-# 3) Run dev server
+npm install
 npm run dev
 ```
+
+Build with `npm run build` and deploy to GitHub Pages with `npm run deploy`.
+
+## Links
+
+- Live: https://a2rp.github.io/book-reading-list/
+- Repository: https://github.com/a2rp/book-reading-list
+- Portfolio: https://www.ashishranjan.net/
+- GitHub: https://github.com/a2rp
+- CodePen: https://codepen.io/ash1198
+- LinkedIn: https://www.linkedin.com/in/aashishranjan
+- Facebook: https://www.facebook.com/theash.ashish/
+- YouTube: https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1
+- Email: mailto:ash.ranjan09@gmail.com
+
+## Support
+
+- Support: https://a2rp-donation-page.netlify.app/
+- Buy Me a Coffee: https://buymeacoffee.com/a2rp
+- Patreon: https://www.patreon.com/a2rp

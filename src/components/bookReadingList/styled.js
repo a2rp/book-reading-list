@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
 
-const border = "1px solid hsl(0 0% 100% / 0.14)";
-const borderMuted = "1px solid hsl(0 0% 100% / 0.10)";
-const focusRing = "0 0 0 3px hsl(0 0% 100% / 0.15)";
+const border = "1px solid #2a303b";
+const borderMuted = "1px solid #343b48";
+const focusRing = "0 0 0 3px rgba(148,163,184,.22)";
 
 export const Styled = {
     Page: styled.div`
@@ -10,9 +10,9 @@ export const Styled = {
     `,
 
     Container: styled.div`
-        max-width: 980px;
+        max-width: 1120px;
         margin: 0 auto;
-        padding: 32px 18px 56px;
+        padding: 48px 22px 72px;
     `,
 
     Header: styled.header`
@@ -20,7 +20,7 @@ export const Styled = {
         justify-content: space-between;
         gap: 16px;
         align-items: end;
-        margin: 12px 0 18px;
+        margin: 12px 0 24px;
     `,
 
     Title: styled.h1`
@@ -57,7 +57,7 @@ export const Styled = {
         border-radius: 16px;
         padding: 16px;
         border: ${border};
-        background: transparent;
+        background: #121620;
     `,
 
     FormRow: styled.div`
@@ -73,7 +73,7 @@ export const Styled = {
     `,
 
     Input: styled.input`
-        background: transparent;
+        background: #121620;
         color: inherit;
         border: ${border};
         border-radius: 10px;
@@ -111,7 +111,7 @@ export const Styled = {
     `,
 
     TextArea: styled.textarea`
-        background: transparent;
+        background: #121620;
         color: inherit;
         border: ${border};
         border-radius: 12px;
@@ -137,7 +137,7 @@ export const Styled = {
 
     PrimaryButton: styled.button`
         border: ${border};
-        background: transparent;
+        background: #121620;
         color: inherit;
         padding: 10px 14px;
         border-radius: 10px;
