@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { FiArrowUp } from "react-icons/fi";
 
 export default function ScrollToTopButton({ threshold = 50 }) {
     const [visible, setVisible] = React.useState(false);
@@ -22,7 +23,7 @@ export default function ScrollToTopButton({ threshold = 50 }) {
             onClick={goTop}
             data-visible={visible}
         >
-            ↑
+            <FiArrowUp aria-hidden="true" />
         </Styled.Wrapper>
     );
 }

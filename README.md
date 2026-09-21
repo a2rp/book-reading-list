@@ -2,7 +2,7 @@
 
 A focused React and Vite reading tracker for books you want to read, are reading, or have finished. Data stays in the browser with LocalStorage.
 
-![Book Reading List preview](image.png)
+![Book Reading List screenshot](screenshot.png)
 
 ## Features
 
