@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { FiBookOpen, FiCheck, FiEdit2, FiTrash2 } from "react-icons/fi";
 import { Styled } from "./styled";
 
 const STORAGE_KEY = "reading-list.v1";
@@ -44,7 +45,14 @@ export default function BookReadingList() {
     const handleConfirm = () => { const fn = confirm?.onConfirm; setConfirm(null); if (typeof fn === "function") fn(); };
     useEffect(() => {
         if (!confirm) return;
-        const onKey = (e) => { if (e.key === "Escape") setConfirm(null); if (e.key === "Enter") handleConfirm(); };
+        const onKey = (e) => {
+            if (e.key === "Escape") setConfirm(null);
+            if (e.key === "Enter") {
+                const fn = confirm?.onConfirm;
+                setConfirm(null);
+                if (typeof fn === "function") fn();
+            }
+        };
         document.addEventListener("keydown", onKey);
         return () => document.removeEventListener("keydown", onKey);
     }, [confirm]);
@@ -103,7 +111,7 @@ export default function BookReadingList() {
         };
         setBooks(prev => [book, ...prev]);
         setTitle(""); setAuthor(""); setStatus("To Read");
-        setConfirm({ title: "Saved", message: `Added “${t}”.`, confirmText: "OK", hideCancel: true });
+        setConfirm({ title: "Saved", message: `Added "${t}".`, confirmText: "OK", hideCancel: true });
     };
 
     const startEdit = id => setEditing(id);
@@ -127,7 +135,7 @@ export default function BookReadingList() {
 
     const clearRead = () => {
         askConfirm({
-            title: "Clear all ‘Read’ books?",
+            title: "Clear all 'Read' books?",
             message: "This will remove all books marked as Read.",
             confirmText: "Clear",
             tone: "danger",
@@ -151,7 +159,7 @@ export default function BookReadingList() {
                 <Styled.Header>
                     <div>
                         <Styled.Title>Book Reading List</Styled.Title>
-                        <Styled.Sub>Track books to read, reading, and read • LocalStorage</Styled.Sub>
+                        <Styled.Sub>Track books to read, reading, and read - LocalStorage</Styled.Sub>
                     </div>
                     <Styled.BadgeRow>
                         <Styled.Tag>To Read: {counts.toRead}</Styled.Tag>
@@ -196,12 +204,12 @@ export default function BookReadingList() {
                         </Styled.Select>
                         <Styled.Select value={sortBy} onChange={(e) => setSortBy(e.target.value)} aria-label="Sort">
                             <option value="created">Newest</option>
-                            <option value="title">Title A–Z</option>
-                            <option value="author">Author A–Z</option>
+                            <option value="title">Title A-Z</option>
+                            <option value="author">Author A-Z</option>
                             <option value="status">By status</option>
                         </Styled.Select>
                         <Styled.Input
-                            placeholder="Search title/author…"
+                            placeholder="Search title/author..."
                             value={query}
                             onChange={(e) => setQuery(e.target.value)}
                             aria-label="Search"
@@ -209,7 +217,7 @@ export default function BookReadingList() {
                     </Styled.RowWrap>
 
                     <Styled.RowWrap>
-                        <Styled.DangerButton type="button" onClick={clearRead}>Clear ‘Read’</Styled.DangerButton>
+                        <Styled.DangerButton type="button" onClick={clearRead}>Clear 'Read'</Styled.DangerButton>
                     </Styled.RowWrap>
                 </Styled.Toolbar>
 
@@ -239,25 +247,25 @@ export default function BookReadingList() {
                                         <Styled.ItemTitle>{b.title}</Styled.ItemTitle>
                                         <Styled.ItemMeta>
                                             {b.author ? <Styled.Tag>by {b.author}</Styled.Tag> : <Styled.Tag tone="muted">Unknown author</Styled.Tag>}
-                                            <span>•</span>
+                                            <span aria-hidden="true">•</span>
                                             <Styled.Tag>#{b.status}</Styled.Tag>
                                             {hasProgress && (
                                                 <>
-                                                    <span>•</span>
+                                                    <span aria-hidden="true">•</span>
                                                     <Styled.DueHint>{b.currentPage}/{b.totalPages} ({pct}%)</Styled.DueHint>
                                                 </>
                                             )}
-                                            {b.startedAt && <><span>•</span><span>Started {formatNice(b.startedAt)}</span></>}
-                                            {b.finishedAt && <><span>•</span><span>Finished {formatNice(b.finishedAt)}</span></>}
+                                            {b.startedAt && <><span aria-hidden="true">•</span><span>Started {formatNice(b.startedAt)}</span></>}
+                                            {b.finishedAt && <><span aria-hidden="true">•</span><span>Finished {formatNice(b.finishedAt)}</span></>}
                                         </Styled.ItemMeta>
                                     </div>
                                 </Styled.ItemLeft>
 
                                 <Styled.ItemRight>
-                                    {b.status !== "Reading" && <Styled.IconButton onClick={() => setStatusQuick(b.id, "Reading")} title="Mark as Reading">📖</Styled.IconButton>}
-                                    {b.status !== "Read" && <Styled.IconButton onClick={() => setStatusQuick(b.id, "Read")} title="Mark as Read">✅</Styled.IconButton>}
-                                    <Styled.IconButton onClick={() => startEdit(b.id)} title="Edit">✏️</Styled.IconButton>
-                                    <Styled.IconButton onClick={() => removeBook(b.id)} title="Delete">🗑️</Styled.IconButton>
+                                    {b.status !== "Reading" && <Styled.IconButton type="button" onClick={() => setStatusQuick(b.id, "Reading")} title="Mark as Reading" aria-label="Mark as Reading"><FiBookOpen aria-hidden="true" /></Styled.IconButton>}
+                                    {b.status !== "Read" && <Styled.IconButton type="button" onClick={() => setStatusQuick(b.id, "Read")} title="Mark as Read" aria-label="Mark as Read"><FiCheck aria-hidden="true" /></Styled.IconButton>}
+                                    <Styled.IconButton type="button" onClick={() => startEdit(b.id)} title="Edit" aria-label="Edit"><FiEdit2 aria-hidden="true" /></Styled.IconButton>
+                                    <Styled.IconButton type="button" onClick={() => removeBook(b.id)} title="Delete" aria-label="Delete"><FiTrash2 aria-hidden="true" /></Styled.IconButton>
                                 </Styled.ItemRight>
                             </Styled.Item>
                         );
@@ -350,7 +358,7 @@ function EditRow({ book, onCancel, onSave }) {
                 </Styled.RowWrap>
 
                 <Styled.TextArea
-                    placeholder="Notes (optional)…"
+                    placeholder="Notes (optional)..."
                     value={notes}
                     onChange={(e) => setNotes(e.target.value)}
                 />
